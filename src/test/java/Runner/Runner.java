@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(dryRun=true,monochrome=true,
+@CucumberOptions(dryRun=false,monochrome=true,
 				features= {"src\\test\\java\\features\\Test.feature"},
 				glue="resources",tags= {"@t1","~@t2"},
 				format= {"pretty","html:test-outputs",

@@ -10,7 +10,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(dryRun=true,monochrome=true,
 				features= {"src\\test\\java\\features\\Test.feature"},
 				glue="resources",tags= {"@t1","~@t2"},
-				format= {"pretty","html:test-outputs"})
+				format= {"pretty","html:test-outputs",
+					"json:test.json"})
 public class Runner {
 	
 }
